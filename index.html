@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Open Latex Online Compiling by Anze-</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Open Latex Online Compiling</h1>
+        <h2>One project as more repositories about compiling latex online for easy math web embedding</h2>
+        <a href="https://github.com/Anze-/clsipy" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>
+<a name="this-story-is-about-clean-beautiful-lean-true-latex-integrated-in-your-html" class="anchor" href="#this-story-is-about-clean-beautiful-lean-true-latex-integrated-in-your-html"><span class="octicon octicon-link"></span></a>This story is about clean, beautiful, lean, true LaTeX integrated in your HTML</h3>
+
+<p>Once upon a time I decided to write math in websites, but nothing out there (MathML or equivalents) could get it right as LaTeX in printing out exactly what I meant. Cropping/Uploading each picture to the website by hand, couldn't be the best option, to get true LaTeX code on the web! So I dreamt of a <code>&lt;latex&gt;</code> html tag...</p>
+
+<h3>
+<a name="where-i-begun" class="anchor" href="#where-i-begun"><span class="octicon octicon-link"></span></a>Where I begun</h3>
+
+<p>First of all I found out CLSI, the <a href="https://code.google.com/p/common-latex-service-interface/">Common Latex Server Interface</a>, a project on google code, no more maintained, full of  options but too tricky/buggy. It just wasn't what I was looking for, a quick, I needed snappy modern open platform. (The could be said about the ruby on rails's ScribTex LaTeX server)</p>
+
+<h3>
+<a name="the-idea" class="anchor" href="#the-idea"><span class="octicon octicon-link"></span></a>The idea</h3>
+
+<p>I was going to give up when I found on github the <a href="https://github.com/pacbard/clsipy">clsipy project</a> by pacbard(<a href="https://github.com/pacbard" class="user-mention">@pacbard</a>) which looked more like what I needed! It could be installed easilly for free knowing a very litte about python and unix, it was meant to run on a free small <a href="https://www.openshift.com/">OpenShift</a> gear so that even a newbie can set up easilly his own compiling server without swearing too much and learning some interesting things. So I started coding...</p>
+
+<h3>
+<a name="what-i-came-up-with" class="anchor" href="#what-i-came-up-with"><span class="octicon octicon-link"></span></a>What I came up with</h3>
+
+<p>Now I can use the <code>&lt;latex&gt;</code> code in my html and it works pretty well, I'm pretty much happy with it.
+The two repos <a href="https://github.com/Anze-/clsipy">clsipy fork</a> on which I developed the "display method" and <a href="https://github.com/Anze-/PLATECH">PLATECH</a> which permits.
+What I'm really happy about is that the setup is really simple. Get an openshift free accound, create a python app that will become your compiling app, get the clsypy git on the python app, install your custom latex on the compiler app server, now dedicate a folder on your "client server" (e.g. your webpage) to the index.php of PLATECH and setup the php code to point to the compiler server, now include the code to get the <code>&lt;latex&gt;</code> tag working, point it to the index.php folder and you are done! :) It's less than one hour work, then you will compile and embed LaTeX forever!</p>
+
+<h3>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h3>
+
+<p>Developed by Anze(<a href="https://github.com/Anze-" class="user-mention">@Anze-</a>).
+And many thanks to pacbard(<a href="https://github.com/pacbard" class="user-mention">@pacbard</a>), a wonderful person who helped me a lot.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/Anze-/clsipy/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Anze-/clsipy/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Anze-/clsipy"></a> is maintained by <a href="https://github.com/Anze-">Anze-</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
