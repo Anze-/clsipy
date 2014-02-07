@@ -1,0 +1,54 @@
+latex{display:inline;margin:0;padding:0;border:0;}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+#menu {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4), inset 0 -3px 3px rgba(115,218,255,0.1);
+  background-color: white;
+  border: solid #ccc 1px;
+  border-radius: 5px;
+  margin: -5px 0 0 -5px;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  text-align:center;
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    filter:alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity: 1;
+    opacity: 1;
+    z-index: 10000;
+    display:none;
+}
+#message{
+background-color:white;
+color:black;
+width: 30%;
+position: fixed;
+margin-left: 30%;
+margin-right: 40%;
+margin-top: 20%;
+border-radius:25px;
+padding:4%;
+    filter:alpha(opacity=100);
+    -moz-opacity:1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+#zenmode{cursor: pointer; cursor: hand;}
+#copylatex{cursor: pointer; cursor: hand;}
+#copyurl{}
