@@ -148,6 +148,12 @@ header a.button {
   top: 0;
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
+header a.button2 {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
 aside a.button {
   width: 138px;
   padding-left: 64px;
